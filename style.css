@@ -46,7 +46,8 @@ body {
 
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    /* inline-size: 2rem; */
     text-align: center;
     font-family: "adobe-garamond-pro", serif;
     font-weight: 700;
@@ -78,9 +79,21 @@ h1 {
 ul {
     padding-inline: var(--gutter);
     display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: #FEFAF1;
+}
+
+
+
+@media (width > 600px) {
+ul {
+    padding-inline: var(--gutter);
+    display: flex;
     gap: var(--vertical);
     justify-content: center;
     color: #FEFAF1;
+}
 }
 
 li {
