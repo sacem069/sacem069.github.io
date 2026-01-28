@@ -1,5 +1,5 @@
 :root {
-    --color: rgb(249, 200, 200);
+    --color: #FF431B;
     --background: blue;
 
     --body-copy: 2rem;
@@ -10,6 +10,7 @@
 
 }
 
+
 body {
     font-family: sans-serif;
     color: var(--color);
@@ -18,42 +19,94 @@ body {
     block-size: 100vh;
     display: grid;
     align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
+
+
+
+
 /* wanted a sick pattern behind my work */
 /* found this pattern collection: https://css-pattern.com/ */
+/* I learned that I can stacking rotating gradients and repeatig them precisely creates a complex pattern */
+
 
 body {
-  --s: 300px; 
-  --c1: #1c2130;
-  --c2: #d14334;
-  
-  --c:var(--c1) 0 25%,#0000 0;
-  --p:0 0/calc(3*var(--s)) calc(2*var(--s));
-  background:
-    conic-gradient(from -45deg at 75% 62.5%,var(--c)) var(--p),
-    conic-gradient(from 135deg at 25% 37.5%,var(--c)) var(--p),
-    repeating-conic-gradient(from 90deg,var(--c),var(--c2) 0 50%)
-     0 0/var(--s) var(--s);
+    --s: 300px;
+    --c1: #FEFAF1;
+    --c2: #f4eee1;
+
+    --c: var(--c1) 0 1%, #0000 0;
+    --p: 0 0/calc(3*var(--s)) calc(2*var(--s));
+    background:
+        conic-gradient(from -45deg at 75% 62.5%, var(--c)) var(--p),
+        conic-gradient(from 135deg at 25% 37.5%, var(--c)) var(--p),
+        repeating-conic-gradient(from 90deg, var(--c), var(--c2) 0 50%) 0 0/var(--s) var(--s);
 }
 
-main {
-    padding-inline: var(--gutter);
-    padding-block: var(--vertical);
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 700;
 }
 
-h1{
-    font-size: var(--heading-copy);
+
+@media (width > 600px) {
+    h1 {
+        font-size: var(--heading-copy);
+        text-align: center;
+        font-family: "adobe-garamond-pro", serif;
+        font-weight: 700;
+    }
 }
+
+
+.intro {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (width > 600px) {
+    .intro {
+        font-size: 2rem;
+    }
+}
+
 
 ul {
     padding-inline: var(--gutter);
-    display: grid;
+    display: flex;
     gap: var(--vertical);
+    justify-content: center;
+    color: #FEFAF1;
 }
 
-footer {
-    color: var(--background);
+li {
     background-color: var(--color);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+
+
+@media (width > 600px) {
+    li {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+}
+
+
+footer {
+    background-color: var(--color);
+    padding: 1rem;
     padding-inline: var(--gutter);
+    color: #FEFAF1;
+    margin-top: auto;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
 
 }
