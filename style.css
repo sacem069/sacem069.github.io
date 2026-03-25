@@ -1,5 +1,6 @@
 :root {
     --color: #373737;
+    --color2:#f2f2f2eb;
     --background: blue;
 
     --body-copy: 2rem;
@@ -65,6 +66,7 @@ h1 {
         font-size: var(--heading-copy);
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
+        inline-size: 50rem;
     }
 }
 
@@ -79,25 +81,26 @@ h1 {
 
 @media (width > 768px) {
     .intro {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        max-inline-size: 50ch;
     }
 }
 
 
 ul {
     padding-inline: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1fr);
     gap: 0.75rem;
     justify-content: center;
     align-items: stretch;
-    color: #FEFAF1;
+    color: var(--color);
 }
 
 @media (width > 768px) {
     ul {
-        flex-direction: row;
+         grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
         gap: var(--vertical);
         padding-inline: var(--gutter);
     }
@@ -105,8 +108,10 @@ ul {
 
 li {
     display: block;
-    background-color: var(--color);
-    border-radius: 0.3125rem;
+    background-color: var(--color2);
+    border-radius: 0.2125rem;
+    border: 1px solid;
+    border-color: var(--color);
     font-size: 0.9375rem;
     padding: 0.875rem 1rem;
     text-align: center;
@@ -126,14 +131,12 @@ li a {
 }
 
 
-hgroup {
-    margin-block-end: 1rem;
-}
-
-@media (width > 768px) {
-    hgroup {
-        margin-block-end: 2rem;
-    }
+.icon {
+    fill: none;
+    stroke: var(--color);
+    display: block;
+    margin: 0 auto 0.5rem;
+    stroke-width: 1.5;
 }
 
 
