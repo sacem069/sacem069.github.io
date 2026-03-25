@@ -1,5 +1,5 @@
 :root {
-    --color: #FF431B;
+    --color: #373737;
     --background: blue;
 
     --body-copy: 2rem;
@@ -39,8 +39,8 @@ body {
 
 
 body {
-    --c1: #FEFAF1;
-    --c2: #f4eee1;
+    --c1: #ececec;
+    --c2: #f0f0f0;
 
     --c: var(--c1) 0 1%, #0000 0;
     --p: 0 0/calc(3*var(--s)) calc(2*var(--s));
@@ -52,25 +52,29 @@ body {
 
 
 h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: "adobe-garamond-pro", serif;
-    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    font-family: "helvetica", serif;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 @media (width > 768px) {
     h1 {
         font-size: var(--heading-copy);
-        text-align: center;
-        font-family: "adobe-garamond-pro", serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
     }
 }
 
 
 .intro {
-    text-align: center;
+
+    text-align: left;
     font-size: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 @media (width > 768px) {
