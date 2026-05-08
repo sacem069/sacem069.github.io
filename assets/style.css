@@ -55,7 +55,7 @@ hgroup,
 
 h1,
 h2 {
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
     font-family: "chivo-mono";
     font-weight: 600;
@@ -81,7 +81,7 @@ h2 {
 .intro,
 .description {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 1.5rem;
     max-width: 22rem;
 }
@@ -102,7 +102,7 @@ ul {
     margin: 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 5rem;
     justify-content: center;
     align-items: stretch;
     color: var(--color);
@@ -114,7 +114,7 @@ ul {
          grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
         gap: var(--vertical);
         padding: 2.8rem;
-         padding-top: 5rem;
+         padding-top: 8rem;
         padding-bottom: 6rem;
     }
 }
@@ -172,7 +172,7 @@ li a {
 
 .about-links {
     padding-top: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
      display: flex;
     gap: 2rem;
 }
@@ -244,8 +244,8 @@ li a {
         display: flex;
         gap: 0.6rem;
         margin-top: 1rem;
-        max-width: 12rem;
-        font-size: 0.8rem;
+        max-width: 150rem;
+        font-size: 0.9rem;
         line-height: 1.35;
         text-align: left;
     }
@@ -297,7 +297,7 @@ footer {
     padding: 1.5rem;
     color: #FEFAF1;
     margin-top: auto;
-    font-size: 0.9375rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
