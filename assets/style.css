@@ -101,7 +101,7 @@ ul {
     padding-inline: 0;
     margin: 2rem;
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
     gap: 4rem;
     justify-content: center;
     align-items: stretch;
@@ -111,9 +111,8 @@ ul {
 
 @media (width > 768px) {
     ul {
-         grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
+         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
         gap: var(--vertical);
-        /* padding-inline: var(--gutter); */
         padding: 2.8rem;
          padding-top: 5rem;
         padding-bottom: 6rem;
@@ -172,9 +171,10 @@ li a {
 }
 
 .about-links {
-    /* padding-left: 2rem; */
     padding-top: 2rem;
     font-size: 1rem;
+     display: flex;
+    gap: 2rem;
 }
 
 
