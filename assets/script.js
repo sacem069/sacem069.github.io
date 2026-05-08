@@ -2,7 +2,7 @@
 
 const projects = document.querySelectorAll (".project");
 
-const observer = newIntersectionObserver(
+const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
 
@@ -18,7 +18,8 @@ const observer = newIntersectionObserver(
     },
 
     {
-        threshold: 0.6
+        threshold: 0.6,
+        rootMargin: "-40% 0px -40% 0px",
     }
 );
  projects.forEach((project) => {

@@ -244,10 +244,14 @@ li a {
         display: flex;
         gap: 0.6rem;
         margin-top: 1rem;
-        max-width: 150rem;
+       width: 16rem;
+max-width: 18rem;
         font-size: 0.9rem;
         line-height: 1.35;
         text-align: left;
+        margin-inline: auto;
+         position: relative;
+    left: -1.2rem;
     }
 
     .project:hover .project-info::before {
