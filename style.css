@@ -1,7 +1,12 @@
 :root {
-    --color: #373737;
-    --color2:#f2f2f2eb;
-    --background: blue;
+    --color: #111111;
+    --background: #F9F5E9;
+    --yellow: #FFD800;
+    --orange: #FFA503;
+    --red: #FF6447;
+    --blue: #6495EE;
+    --green: #98FC98;
+
 
     --body-copy: 2rem;
     --heading-copy: calc(var(--body-copy) * 3);
@@ -14,10 +19,11 @@
 
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-family: "chivo-mono", monospace;
+	font-weight: 400;
     color: var(--color);
-    font-size: 1rem;
+    background-color: var(--background);
+    font-size: 20px;
     min-block-size: 100vh;
     display: grid;
     align-items: center;
@@ -27,28 +33,9 @@ body {
 @media (width > 768px) {
     body {
         --s: 18.75rem;
-        font-size: var(--body-copy);
+        font-size: 20px;
     }
 }
-
-
-/* wanted a sick pattern behind my work */
-/* found this pattern collection: https://css-pattern.com/ */
-/* I learned that I can stacking rotating gradients and repeatig them precisely creates a complex pattern */
-
-
-body {
-    --c1: #ececec;
-    --c2: #f0f0f0;
-
-    --c: var(--c1) 0 1%, #0000 0;
-    --p: 0 0/calc(3*var(--s)) calc(2*var(--s));
-    background:
-        conic-gradient(from -45deg at 75% 62.5%, var(--c)) var(--p),
-        conic-gradient(from 135deg at 25% 37.5%, var(--c)) var(--p),
-        repeating-conic-gradient(from 90deg, var(--c), var(--c2) 0 50%) 0 0/var(--s) var(--s);
-}
-
 
 
 hgroup {
@@ -68,9 +55,9 @@ hgroup {
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 30px;
     text-align: left;
-    font-family: "helvetica", serif;
+    font-family: "chivo-mono";
     font-weight: 600;
     padding-left: 2rem;
     padding-top: 5rem;
@@ -79,8 +66,8 @@ h1 {
 
 @media (width > 768px) {
     h1 {
-        font-size: var(--heading-copy);
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 30px;
+        font-family: "chivo-mono";
         font-weight: 700;
         inline-size: 50rem;
     }
@@ -122,14 +109,14 @@ ul {
          grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
         gap: var(--vertical);
         padding-inline: var(--gutter);
-         padding-top: 10rem;
+         padding-top: 5rem;
         padding-bottom: 20rem;
     }
 }
 
 li {
     display: block;
-    background-color: var(--color2);
+    /* background-color: var(--color); */
     border-radius: 0.2125rem;
     border: 1px solid;
     border-color: var(--color);
