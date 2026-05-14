@@ -20,7 +20,7 @@
 
 body {
     font-family: "chivo-mono", monospace;
-	font-weight: 400;
+    font-weight: 400;
     color: var(--color);
     background-color: var(--background);
     font-size: 20px;
@@ -45,6 +45,7 @@ hgroup,
 }
 
 @media (width > 768px) {
+
     hgroup,
     .about {
         padding: 8rem 0 0 4rem;
@@ -68,7 +69,8 @@ h2 {
 }
 
 @media (width > 768px) {
-    h1, 
+
+    h1,
     h2 {
         font-size: 25px;
         font-family: "chivo-mono";
@@ -88,6 +90,7 @@ h2 {
 
 
 @media (width > 768px) {
+
     .intro,
     .description {
         font-size: 1.2rem;
@@ -106,15 +109,15 @@ ul {
     justify-content: center;
     align-items: stretch;
     color: var(--color);
-     padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 @media (width > 768px) {
     ul {
-         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         gap: var(--vertical);
         padding: 2.8rem;
-         padding-top: 8rem;
+        padding-top: 8rem;
         padding-bottom: 6rem;
     }
 }
@@ -135,7 +138,7 @@ li a {
     min-height: 5rem;
     color: inherit;
     text-decoration: none;
-     border: 1px solid var(--color);
+    border: 1px solid var(--color);
     /* border-top: 12px solid var(--project-color); */
     border-radius: 0.2125rem;
     padding: 1rem;
@@ -173,14 +176,14 @@ li a {
 .about-links {
     padding-top: 2rem;
     font-size: 0.8rem;
-     display: flex;
+    display: flex;
     gap: 2rem;
 }
 
 
 @media (width > 768px) {
     .about-links {
-            font-size: 1rem;
+        font-size: 1rem;
     }
 }
 
@@ -210,7 +213,7 @@ li a {
 @media (width < 768px) {
     .project-info {
 
-            display: flex;
+        display: flex;
         gap: 0.6rem;
 
         max-width: 16rem;
@@ -237,21 +240,21 @@ li a {
 @media (width > 768px) {
 
     .project-info {
-    display: none;
-}
+        display: none;
+    }
 
     .project:hover .project-info {
         display: flex;
         gap: 0.6rem;
         margin-top: 1rem;
-       width: 16rem;
-max-width: 18rem;
+        width: 16rem;
+        max-width: 18rem;
         font-size: 0.9rem;
         line-height: 1.35;
         text-align: left;
         margin-inline: auto;
-         position: relative;
-    left: -1.2rem;
+        position: relative;
+        left: -1.2rem;
     }
 
     .project:hover .project-info::before {
@@ -268,7 +271,7 @@ max-width: 18rem;
 
 .project a {
     position: relative;
-     z-index: 1;
+    z-index: 1;
 
 }
 
